@@ -26,7 +26,9 @@ defmodule Reloader.Mixfile do
     [
       {:ace, "~> 0.18.0"},
       {:raxx_static, "~> 0.7.0"},
-      {:exsync, "~> 0.2.3", only: :dev},
+      # {:exsync, "~> 0.2.3", only: :dev},
+      # {:exsync, path: "/home/nietaki/repos/exsync", only: :dev},
+      {:exsync, github: "nietaki/exsync", branch: "selective-reloading"},
       {:postgrex, ">= 0.0.0"},
       {:ecto_sql, "~> 3.0.0"}
     ]

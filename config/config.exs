@@ -13,5 +13,7 @@ end
 
 if Mix.env() == :dev do
   config :exsync,
-    extra_extensions: [".js", ".css"]
+    extra_extensions: [".js", ".css"],
+    exclude_default_src_paths?: true,
+    addition_dirs: ["lib/reloader/www/", "lib/reloader/www.ex", "lib/reloader/repo.ex"]
 end
